@@ -16,3 +16,6 @@ LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
+
+PRODUCT_COPY_FILES += \
+    vendor/addons/prebuilt/system/fonts/Koruri-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/Koruri-Regular.ttf \

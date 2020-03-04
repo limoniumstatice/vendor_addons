@@ -17,5 +17,7 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
 
+# Froko fonts
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/fonts/Koruri-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/Koruri-Regular.ttf \
+    vendor/addons/prebuilt/system/fonts/RoundedMplus1c-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/RoundedMplus1c-Regular.ttf

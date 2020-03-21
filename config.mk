@@ -19,5 +19,7 @@ DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/common
 
 # Froko fonts
 PRODUCT_COPY_FILES += \
+    vendor/addons/prebuilt/system/fonts/HackGen-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/HackGen-Regular.ttf \
+    vendor/addons/prebuilt/system/fonts/HackGen-Bold.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/HackGen-Bold.ttf \
     vendor/addons/prebuilt/system/fonts/Koruri-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/Koruri-Regular.ttf \
     vendor/addons/prebuilt/system/fonts/RoundedMplus1c-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/RoundedMplus1c-Regular.ttf

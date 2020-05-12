@@ -22,6 +22,10 @@ DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay-fod
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay-fod
 endif
 
+# Include {Lato,Rubik} fonts
+$(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
+$(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
+
 # Froko fonts
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/fonts/RoundedMplus1c-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/RoundedMplus1c-Regular.ttf \

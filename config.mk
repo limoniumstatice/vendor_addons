@@ -29,4 +29,4 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 # Froko fonts
 PRODUCT_COPY_FILES += \
     vendor/addons/prebuilt/system/fonts/RoundedMplus1c-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/RoundedMplus1c-Regular.ttf \
-    $(call find-copy-subdir-files,*,vendor/addons/prebuilt/system/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
+    $(call find-copy-subdir-files,*,vendor/addons/prebuilt/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)

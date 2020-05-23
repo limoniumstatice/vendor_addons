@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fonts-modification version="1">
 
+    <!-- HackGen -->
+    <family customizationType="new-named-family" name="hackgen">
+        <font weight="400" style="normal">HackGen-Regular.ttf</font>
+        <font weight="700" style="normal">HackGen-Bold.ttf</font>
+    </family>
+    <alias name="hackgen-light" to="hackgen" weight="300" />
+    <alias name="hackgen-medium" to="hackgen" weight="500" />
+    <alias name="hackgen-semi-bold" to="hackgen" weight="600" />
+    <alias name="hackgen-bold" to="hackgen" weight="700" />
+
     <!-- Koruri -->
     <family customizationType="new-named-family" name="koruri">
         <font weight="400" style="normal">Koruri-Regular.ttf</font>

@@ -51,16 +51,13 @@ PRODUCT_PACKAGES += \
 
 # Gapps priv-app
 PRODUCT_PACKAGES += \
-    AndroidMigratePrebuilt \
     ConfigUpdater \
     GoogleFeedback \
     GoogleOneTimeInitializer \
     GooglePartnerSetup \
     GoogleServicesFramework \
     Phonesky \
-    PixelSetupWizard \
     PrebuiltGmsCore \
-    SetupWizardPrebuilt \
     TurboPrebuilt \
     WellbeingPrebuilt
 

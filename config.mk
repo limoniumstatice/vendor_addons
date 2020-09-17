@@ -23,6 +23,47 @@ DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay-fod
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay-fod
 endif
 
+# Gapps app
+PRODUCT_PACKAGES += \
+    Chrome \
+    GoogleContactsSyncAdapter \
+    GoogleTTS \
+    LatinIMEGooglePrebuilt \
+    TrichromeLibrary \
+    WebViewGoogle
+
+# Gapps etc
+PRODUCT_COPY_FILES += \
+    vendor/addons/prebuilt/product/etc/permissions/com.google.android.maps.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.maps.xml \
+    vendor/addons/prebuilt/product/etc/permissions/com.google.android.media.effects.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.media.effects.xml \
+    vendor/addons/prebuilt/product/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google.xml \
+    vendor/addons/prebuilt/product/etc/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml \
+    vendor/addons/prebuilt/product/etc/preferred-apps/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/preferred-apps/google.xml \
+    vendor/addons/prebuilt/product/etc/sysconfig/google-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
+    vendor/addons/prebuilt/product/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google.xml \
+    vendor/addons/prebuilt/product/etc/sysconfig/google_build.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google_build.xml \
+    vendor/addons/prebuilt/system/etc/hosts:$(TARGET_COPY_OUT_SYSTEM)/etc/hosts
+
+# Gapps framework
+PRODUCT_PACKAGES += \
+    com.google.android.maps \
+    com.google.android.media.effects
+
+# Gapps priv-app
+PRODUCT_PACKAGES += \
+    AndroidMigratePrebuilt \
+    ConfigUpdater \
+    GoogleFeedback \
+    GoogleOneTimeInitializer \
+    GooglePartnerSetup \
+    GoogleServicesFramework \
+    Phonesky \
+    PixelSetupWizard \
+    PrebuiltGmsCore \
+    SetupWizardPrebuilt \
+    TurboPrebuilt \
+    WellbeingPrebuilt
+
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)

@@ -17,7 +17,8 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 # Gapps app
 PRODUCT_PACKAGES += \
     GoogleContactsSyncAdapter \
-    GoogleTTS
+    GoogleTTS \
+    LatinIMEGooglePrebuilt
 
 # Gapps etc
 PRODUCT_COPY_FILES += \

@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/extra/prebuilt/product/etc/sysconfig/google-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
     vendor/extra/prebuilt/product/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google.xml \
     vendor/extra/prebuilt/product/etc/sysconfig/google_build.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google_build.xml \
+    vendor/extra/prebuilt/product/etc/fonts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/fonts.xml \
     vendor/extra/prebuilt/product/etc/hosts:$(TARGET_COPY_OUT_SYSTEM)/etc/hosts
 
 # Gapps framework

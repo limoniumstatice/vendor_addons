@@ -48,3 +48,7 @@ PRODUCT_PACKAGES += \
     PrebuiltGmsCore \
     SetupWizardPrebuilt
 
+# Froko fonts
+PRODUCT_COPY_FILES += \
+    vendor/extra/prebuilt/product/fonts/RoundedMplus1c-Regular.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/RoundedMplus1c-Regular.ttf
+

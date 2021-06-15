@@ -186,6 +186,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.REBOOT"/>
         <permission name="android.permission.SECURE_ELEMENT_PRIVILEGED_OPERATION"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.hiddenmenu">
